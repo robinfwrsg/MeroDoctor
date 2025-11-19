@@ -137,3 +137,147 @@ input, select { font: inherit; }
     .grid { grid-template-columns: 1fr; }
     .plans { grid-template-columns: 1fr; }
 }
+/* -----------------------
+   RESPONSIVE FIXES
+-------------------------*/
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    /* Layout fixes */
+    .container {
+        padding: 0 16px;
+    }
+
+    .header .container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav {
+        gap: 4px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .symptom-input-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Cards */
+    .card {
+        padding: 20px;
+    }
+
+    /* Grid areas */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .plans {
+        grid-template-columns: 1fr;
+    }
+
+    /* Doctors */
+    .urgent-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Drawer */
+    .cart-drawer {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    /* Global spacing */
+    body {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    /* Header */
+    .brand-name {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .tag {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    /* Medicine */
+    .medicine-header h3 {
+        font-size: 18px;
+    }
+
+    .medicine-header .price {
+        font-size: 20px;
+    }
+
+    /* Quantity buttons */
+    .quantity-control button {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Doctors */
+    .doctor-avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+
+    .doctor-name {
+        font-size: 18px;
+    }
+
+    /* Modal */
+    .modal-content {
+        max-height: 85vh;
+        padding: 0;
+    }
+
+    .modal-body {
+        padding: 16px;
+    }
+
+    .plan-price {
+        font-size: 28px;
+    }
+}
